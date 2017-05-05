@@ -1,0 +1,22 @@
+#server:
+    #port: 46007
+    #ssl:
+        #keyStore: /security/cacerts/keystore.jks
+        #keyStorePassword: changeit
+        #keyPassword: changeit
+
+logging:
+  level.root: ERROR
+  level.com.dell.isg.smi: TRACE
+  file: /var/log/dell/service-server-action.log
+
+#eureka:
+  #client:
+    #serviceUrl:
+       #defaultZone: http://service-registry:8600/eureka/
+
+spring:
+  #application:
+    #name: SERVER-ACTION
+  jackson:
+    serialization-inclusion : non_null
